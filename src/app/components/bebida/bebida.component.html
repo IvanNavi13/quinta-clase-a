@@ -1,0 +1,9 @@
+<!-- *ngIf="request.getCoctel('margarita') | async as data" -->
+<div *ngFor="let drink of bebidas"> 
+    <!-- {{data | json}} -->
+    <p>{{drink.name}}</p>
+    <img [src]="drink.img">
+    <div *ngFor="let ingredient of drink.ingredients">
+        <label for="">{{ingredient}}</label>
+    </div>
+</div>

@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'quinta-clase-a';
+
+  isflag: boolean = true;
+
+  onOcultar(){
+    this.isflag = !this.isflag;
+  }
+
 }

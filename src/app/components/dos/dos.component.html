@@ -1,0 +1,10 @@
+<!-- <div *ngIf="infoService.data$ | async as info"> {{info | json}}</div> -->
+<form action="" *ngIf="infoService.data$ | async as info">
+    <label for="">name: </label>
+    <input type="text" [value]="info.name">
+    <br><br>
+    <label for="">password: </label>
+    <input type="text" [value]="info.password">
+    <br><br>
+</form>
+
